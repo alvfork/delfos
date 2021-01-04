@@ -1,0 +1,22 @@
+{
+  "name": "veritas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clustergy/veritas.git"
+  },
+  "keywords": [
+    "veritas"
+  ],
+  "author": "Clustergy Development Team <development@clustergy.com> (https://clustergy.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clustergy/veritas/issues"
+  },
+  "homepage": "https://github.com/clustergy/veritas#readme"
+}
