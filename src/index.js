@@ -1,1 +1,3 @@
-export * from './assertions';
+const assertions = require('./assertions');
+
+module.exports = {...assertions};

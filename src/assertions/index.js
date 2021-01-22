@@ -1,7 +1,7 @@
-import primitive from './primitive';
-import strings from './strings';
+const primitive = require('./primitive');
+const strings = require('./strings');
 
-export * from './primitive';
-export * from './strings';
-
-export {primitive, strings};
+module.exports = {
+  ...primitive,
+  ...strings,
+};

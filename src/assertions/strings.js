@@ -1,4 +1,6 @@
-import {isString, isNull} from './primitive';
+const primitive = require('./primitive');
+
+const {isNull, isString} = primitive;
 
 const isEmptyString = (value) => (isString(value) ? value.length === 0 : false);
 
