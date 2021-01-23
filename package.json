@@ -1,7 +1,7 @@
 {
   "name": "veritas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tiny set of assertions, useful for common validations",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/clustergy/veritas.git"
   },
   "keywords": [
-    "veritas"
+    "veritas", "assertions", "validations"
   ],
   "author": "Clustergy Development Team <development@clustergy.com> (https://clustergy.com/)",
   "license": "MIT",
