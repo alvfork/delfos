@@ -1,4 +1,4 @@
-const primitive = require('./primitive');
+const primitive = require('../primitive/primitive');
 
 const {isNull, isString} = primitive;
 
