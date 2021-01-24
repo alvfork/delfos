@@ -1,5 +1,5 @@
 {
-  "name": "veritas",
+  "name": "delfos",
   "version": "1.0.0",
   "description": "Tiny set of assertions, useful for common validations",
   "main": "src/index.js",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clustergy/veritas.git"
+    "url": "git+https://github.com/clustergy/delfos.git"
   },
   "keywords": [
-    "veritas", "assertions", "validations"
+    "delfos", "assertions", "validations"
   ],
   "author": "Clustergy Development Team <development@clustergy.com> (https://clustergy.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clustergy/veritas/issues"
+    "url": "https://github.com/clustergy/delfos/issues"
   },
-  "homepage": "https://github.com/clustergy/veritas#readme",
+  "homepage": "https://github.com/clustergy/delfos#readme",
   "devDependencies": {
     "eslint": "7.18.0",
     "eslint-config-airbnb-base": "14.2.1",
