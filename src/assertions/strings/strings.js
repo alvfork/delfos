@@ -14,7 +14,7 @@ const isNotBlankString = (value) =>
   isString(value) ? value.trim() !== '' : false;
 
 const isStringLengthValid = (value, top, floor = 0) =>
-  isString(value) ? value.length > top || value.length < floor : false;
+  isString(value) ? !(value.length > top || value.length < floor) : false;
 
 module.exports = {
   isEmptyString,
