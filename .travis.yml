@@ -5,6 +5,9 @@ node_js:
 cache:
   directories:
     - node_modules
+branches:
+  only:
+    - main
 notifications:
   email: alvaro@clustergy.com
 before_install:
@@ -12,8 +15,9 @@ before_install:
 before_script:
   - npm prune
 script:
-  - npm run test:staged
+  - npm run cover
   - npm run check-coverage
+  - npm run build
 after_success:
   - npm run report-coverage
   - npm run semantic-release

@@ -2,14 +2,20 @@
   "name": "delfos",
   "version": "0.0.0-semantically-released",
   "description": "Tiny set of assertions, useful for common validations",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha --recursive \"src/*$MATCH*/*.test.js\" -w",
-    "test:staged": "istanbul cover -x *.test.js _mocha -- -R spec --recursive \"src/*$MATCH*/*.test.js\"",
+    "test": "mocha --recursive \"src/*$MATCH*/*.test.js\" --require @babel/register",
+    "watch:test": "npm t -- -w",
+    "cover": "nyc npm test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "check-coverage": "istanbul check-coverage --statements 90 --branches 90 --functions 90 --lines 90",
-    "report-coverage": "cat ./coverage/lcov.info | codecov"
+    "check-coverage": "nyc check-coverage --statements 90 --branches 90 --functions 90 --lines 90",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "prebuild": "rimraf dist",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build:umd": "webpack --output-filename index.umd.js --mode development",
+    "build:umd.min": "webpack --output-filename index.umd.min.js --mode production"
   },
   "repository": {
     "type": "git",
@@ -20,6 +26,10 @@
     "assertions",
     "validations"
   ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "author": "Clustergy Development Team <development@clustergy.com> (https://clustergy.com/)",
   "license": "MIT",
   "bugs": {
@@ -27,6 +37,11 @@
   },
   "homepage": "https://github.com/clustergy/delfos#readme",
   "devDependencies": {
+    "@babel/cli": "7.12.10",
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.11",
+    "@babel/register": "7.12.10",
+    "babel-loader": "8.2.2",
     "chai": "4.2.0",
     "codecov.io": "0.1.6",
     "commitizen": "4.2.3",
@@ -39,11 +54,16 @@
     "eslint-plugin-mdx": "1.8.2",
     "eslint-plugin-prettier": "3.3.1",
     "husky": "4.3.8",
-    "istanbul": "0.4.5",
+    "json-loader": "0.5.7",
     "lint-staged": "10.5.3",
     "mocha": "8.2.1",
+    "npm-run-all": "4.1.5",
+    "nyc": "15.1.0",
     "prettier": "2.2.1",
-    "semantic-release": "^17.3.7"
+    "rimraf": "3.0.2",
+    "semantic-release": "^17.3.7",
+    "webpack": "5.17.0",
+    "webpack-cli": "4.4.0"
   },
   "husky": {
     "hooks": {
@@ -53,7 +73,7 @@
   "lint-staged": {
     "*.js": [
       "npx eslint --ext .js",
-      "npm run test:staged",
+      "npm run cover",
       "npm run check-coverage"
     ]
   },
@@ -61,5 +81,10 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
