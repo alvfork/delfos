@@ -1,12 +1,12 @@
-const {expect} = require('chai');
-const {
+import {expect} from 'chai';
+import {
   isNull,
   isString,
   isNumber,
   isObject,
   isFunction,
   isUndefined,
-} = require('../../index');
+} from './primitive';
 
 describe('========= Primitive assertions ========= ', () => {
   describe('- Fuction: isNull(value)', () => {

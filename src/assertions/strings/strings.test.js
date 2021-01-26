@@ -1,11 +1,12 @@
-const {expect} = require('chai');
-const {
+import {expect} from 'chai';
+
+import {
   isEmptyString,
   isNullOrEmptyString,
   isBlankString,
   isNotBlankString,
   isStringLengthValid,
-} = require('../../index');
+} from './strings';
 
 describe('========= String assertions ========= ', () => {
   describe('- Fuction: isEmptyString(value)', () => {

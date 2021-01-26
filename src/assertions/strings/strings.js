@@ -1,25 +1,16 @@
-const primitive = require('../primitive/primitive');
+import {isNull, isString} from '../primitive';
 
-const {isNull, isString} = primitive;
+export const isEmptyString = (value) =>
+  isString(value) ? value.length === 0 : false;
 
-const isEmptyString = (value) => (isString(value) ? value.length === 0 : false);
-
-const isNullOrEmptyString = (value) =>
+export const isNullOrEmptyString = (value) =>
   isString(value) ? value.length === 0 : isNull(value);
 
-const isBlankString = (value) =>
+export const isBlankString = (value) =>
   isString(value) ? value.trim() === '' : false;
 
-const isNotBlankString = (value) =>
+export const isNotBlankString = (value) =>
   isString(value) ? value.trim() !== '' : false;
 
-const isStringLengthValid = (value, top, floor = 0) =>
+export const isStringLengthValid = (value, top, floor = 0) =>
   isString(value) ? !(value.length > top || value.length < floor) : false;
-
-module.exports = {
-  isEmptyString,
-  isNullOrEmptyString,
-  isBlankString,
-  isNotBlankString,
-  isStringLengthValid,
-};
