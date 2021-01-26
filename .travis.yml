@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - 10
+  - 12
 cache:
   directories:
     - node_modules
@@ -11,7 +11,7 @@ branches:
 notifications:
   email: alvaro@clustergy.com
 before_install:
-  - npm i -g npm@^4.0.0
+  - npm i -g npm@^6.0.0
 before_script:
   - npm prune
 script:
