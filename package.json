@@ -73,8 +73,7 @@
   "lint-staged": {
     "*.js": [
       "npx eslint --ext .js",
-      "npm run cover",
-      "npm run check-coverage"
+      "npm run cover && npm run check-coverage"
     ]
   },
   "config": {
