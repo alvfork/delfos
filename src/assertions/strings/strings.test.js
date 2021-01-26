@@ -53,10 +53,14 @@ describe('========= String assertions ========= ', () => {
     it('When value is fool and top is 4', () =>
       expect(isStringLengthValid('fool', 4)).to.be.true);
     it('When value is fool and top is 4 and floor is 2', () =>
-      expect(isStringLengthValid('fool', 4)).to.be.true);
+      expect(isStringLengthValid('fool', 4, 2)).to.be.true);
     it('When value is fool and top is 3', () =>
       expect(isStringLengthValid('fool', 3)).to.be.false);
     it('When value is fool and top is 16 and floor is 8', () =>
       expect(isStringLengthValid('fool', 16, 8)).to.be.false);
+    it('When value is fool and top is 3 and floor is 2', () =>
+      expect(isStringLengthValid('fool', 3, 2)).to.be.false);
+    it('When value is null and top is 3 and floor is 2', () =>
+      expect(isStringLengthValid(null, 3, 2)).to.be.false);
   });
 });
