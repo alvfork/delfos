@@ -1,6 +1,6 @@
 {
   "name": "delfos",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "Tiny set of assertions, useful for common validations",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "mocha --recursive \"src/*$MATCH*/*.test.js\" --require @babel/register",
     "watch:test": "npm t -- -w",
     "cover": "nyc npm test",
-    "semantic-release": "npm publish --access public",
+    "semantic-release": "semantic-release",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "prebuild": "rimraf dist",
@@ -30,7 +30,7 @@
     "dist",
     "README.md"
   ],
-  "author": "Clustergy Development Team <development@clustergy.com> (https://clustergy.com/)",
+  "author": "Alvaro Araujo <alvaro@clustergy.com> (https://clustergy.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/clustergy/delfos/issues"
@@ -87,6 +87,8 @@
     ]
   },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   }
 }
