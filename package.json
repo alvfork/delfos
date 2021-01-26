@@ -1,6 +1,6 @@
 {
   "name": "delfos",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "Tiny set of assertions, useful for common validations",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "mocha --recursive \"src/*$MATCH*/*.test.js\" --require @babel/register",
     "watch:test": "npm t -- -w",
     "cover": "nyc npm test",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "prebuild": "rimraf dist",
@@ -85,5 +85,8 @@
     "presets": [
       "@babel/preset-env"
     ]
+  },
+  "release": {
+    "branches": ["main"]
   }
 }
