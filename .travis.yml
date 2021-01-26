@@ -11,7 +11,7 @@ branches:
 notifications:
   email: alvaro@clustergy.com
 before_install:
-  - npm i -g npm@^5.2.0
+  - npm i -g npm@^4.0.0
 before_script:
   - npm prune
 script:
@@ -20,4 +20,4 @@ script:
   - npm run build
 after_success:
   - npm run report-coverage
-  - npx semantic-release
+  - npm run semantic-release
