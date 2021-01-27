@@ -8,6 +8,7 @@
     "test": "mocha --recursive \"src/*$MATCH*/*.test.js\" --require @babel/register",
     "watch:test": "npm t -- -w",
     "cover": "nyc --reporter=lcov npm test",
+    "summary:cover": "nyc npm test",
     "semantic-release": "semantic-release",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",

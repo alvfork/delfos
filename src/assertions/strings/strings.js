@@ -9,7 +9,7 @@ export const isNullOrEmptyString = (value) =>
 export const isBlankString = (value) =>
   isString(value) ? value.trim() === '' : false;
 
-export const isNotBlankString = (value) =>
+export const isFilledString = (value) =>
   isString(value) ? value.trim() !== '' : false;
 
 export const isStringLengthValid = (value, top, floor = 0) =>

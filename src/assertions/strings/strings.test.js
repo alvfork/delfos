@@ -4,7 +4,7 @@ import {
   isEmptyString,
   isNullOrEmptyString,
   isBlankString,
-  isNotBlankString,
+  isFilledString,
   isStringLengthValid,
 } from './strings';
 
@@ -39,15 +39,15 @@ describe('========= String assertions ========= ', () => {
     it('When value is a not blank string', () =>
       expect(isBlankString('fool')).to.be.false);
   });
-  describe('- Fuction: isNotBlankString(value)', () => {
+  describe('- Fuction: isFilledString(value)', () => {
     it('When value is a not blank string', () =>
-      expect(isNotBlankString('fool')).to.be.true);
+      expect(isFilledString('fool')).to.be.true);
     it('When value is an empty string', () =>
-      expect(isNotBlankString('')).to.be.false);
+      expect(isFilledString('')).to.be.false);
     it('When value is a string with space blanks', () =>
-      expect(isNotBlankString(' ')).to.be.false);
+      expect(isFilledString(' ')).to.be.false);
     it('When value is undefined', () =>
-      expect(isNotBlankString(undefined)).to.be.false);
+      expect(isFilledString(undefined)).to.be.false);
     it('When value is null', () => expect(isBlankString(null)).to.be.false);
   });
   describe('- Fuction: isStringLengthValid(value, top, floor = 0)', () => {
