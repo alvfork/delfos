@@ -16,7 +16,7 @@ $ npm install delfos --save
 ```
 
 # Why?
-Our intention is to offer a tiny solution that provide concrete and essential validations for projects that do not require out-of-the-ordinary validations. Currently there are excellent libraries that offer large sets of functions to build validations, however the focus here is to offer the essential ones in order to maintain a compact library.
+We intend to offer a tiny solution that provides concrete and essential validations for projects that do not require out-of-the-ordinary validations. Currently, there are excellent libraries that offer large sets of functions to build validations, however, the focus here is to offer the essential ones to maintain a compact library.
 
 # Usage
 ```js
@@ -91,5 +91,5 @@ isBlankString(null)    // false
 >isUndefined(value)
 >```
 
-# Contribute
-If you would like to collaborate in any way with this project or would like to provide a suggestion/opinion, please do not doubt to do so, it will be appreciated.
+# Collaborate
+If you want to collaborate in any way with this project, or if you want to contribute with a suggestion or opinion, go ahead. We thank you in advance.

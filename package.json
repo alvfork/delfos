@@ -34,9 +34,9 @@
   "author": "Alvaro Araujo <alvaro@clustergy.com> (https://clustergy.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clustergy/delfos/issues"
+    "url": "https://github.com/alvfork/delfos/issues"
   },
-  "homepage": "https://github.com/clustergy/delfos#readme",
+  "homepage": "https://github.com/alvfork/delfos#readme",
   "devDependencies": {
     "@babel/cli": "7.12.10",
     "@babel/core": "7.12.10",
