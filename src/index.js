@@ -1,1 +1,1 @@
-export * as delfos from './assertions';
+export * from './assertions';
