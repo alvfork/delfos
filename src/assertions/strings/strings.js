@@ -1,4 +1,4 @@
-import {isNull, isString} from '../primitive';
+import {isNull, isString} from '../primitive/primitive';
 
 export const isEmptyString = (value) =>
   isString(value) ? value.length === 0 : false;
