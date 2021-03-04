@@ -7,11 +7,13 @@
     },
     "extends": [
       "airbnb-base",
-      "prettier"
+      "prettier",
+      "plugin:jsdoc/recommended"
     ],
     "plugins": [
       "prettier",
-      "import"
+      "import",
+      "jsdoc"
     ],
     "settings": {
       "import/resolver": {
