@@ -1,5 +1,5 @@
 /**
- * Verify a null type.
+ * Assert null type.
  *
  * @function
  * @param value
@@ -9,7 +9,7 @@
 export const isNull = (value) => value === null;
 
 /**
- * Verify a string type.
+ * Assert string type.
  *
  * @function
  * @param value
@@ -19,7 +19,7 @@ export const isNull = (value) => value === null;
 export const isString = (value) => typeof value === 'string';
 
 /**
- * Verify a number type.
+ * Assert number type.
  *
  * @function
  * @param value
@@ -29,7 +29,7 @@ export const isString = (value) => typeof value === 'string';
 export const isNumber = (value) => typeof value === 'number';
 
 /**
- * Verify a object type.
+ * Assert object type.
  *
  * @function
  * @param value
@@ -39,7 +39,7 @@ export const isNumber = (value) => typeof value === 'number';
 export const isObject = (value) => typeof value === 'object';
 
 /**
- * Verify a function type.
+ * Assert function type.
  *
  * @function
  * @param value
@@ -49,7 +49,7 @@ export const isObject = (value) => typeof value === 'object';
 export const isFunction = (value) => typeof value === 'function';
 
 /**
- * Verify a undefined type.
+ * Assert undefined type.
  *
  * @function
  * @param value

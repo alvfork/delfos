@@ -1,7 +1,7 @@
 import {isNull, isString} from '../primitive';
 
 /**
- * Verify a string type and empty string.
+ * Assert string type and empty string.
  *
  * @function
  * @param value
@@ -12,7 +12,7 @@ export const isEmptyString = (value) =>
   isString(value) ? value.length === 0 : false;
 
 /**
- * Verify a string type and empty string, or null type.
+ * Assert string type and empty string, or null type.
  *
  * @function
  * @param value
@@ -23,7 +23,7 @@ export const isNullOrEmptyString = (value) =>
   isString(value) ? value.length === 0 : isNull(value);
 
 /**
- * Verify a string type and string contains blanks.
+ * Assert string type and string contains blanks.
  *
  * @function
  * @param value
@@ -34,7 +34,7 @@ export const isBlankString = (value) =>
   isString(value) ? value.trim() === '' : false;
 
 /**
- * Verify a string type and string contains only blanks.
+ * Assert string type and string contains only blanks.
  *
  * @function
  * @param value
@@ -45,7 +45,7 @@ export const isFilledString = (value) =>
   isString(value) ? value.trim() !== '' : false;
 
 /**
- * Verify a string type and string length is between top and floor parameters.
+ * Assert string type and string length is between top and floor parameters.
  *
  * @function
  * @param value

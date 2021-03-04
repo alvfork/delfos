@@ -5,7 +5,7 @@ const MAX_URL_LENGTH = 2048;
 const URL_REGEX = /[(http(s)?)://(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/;
 
 /**
- * Verify a string type, filled and valid URL. The max length of URL is 2048 characters.
+ * Assert string type, filled and valid URL. The max length of URL is 2048 characters.
  *
  * @function
  * @param value
@@ -18,7 +18,7 @@ export const isUrl = (value) => {
 };
 
 /**
- * Verify a string type, empty string or valid URL. The max length of URL is 2048 characters.
+ * Assert string type, empty string or valid URL. The max length of URL is 2048 characters.
  *
  * @function
  * @param value
