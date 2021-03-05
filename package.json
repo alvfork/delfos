@@ -47,11 +47,14 @@
     "codecov.io": "0.1.6",
     "commitizen": "4.2.3",
     "cz-conventional-changelog": "3.3.0",
+    "documentation": "^13.1.1",
+    "docusaurus": "^1.14.6",
     "eslint": "7.18.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "7.2.0",
     "eslint-mdx": "1.8.2",
     "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsdoc": "^32.2.0",
     "eslint-plugin-mdx": "1.8.2",
     "eslint-plugin-prettier": "3.3.1",
     "husky": "4.3.8",
@@ -92,8 +95,5 @@
       "main"
     ]
   },
-  "dependencies": {
-    "documentation": "^13.1.1",
-    "eslint-plugin-jsdoc": "^32.2.0"
-  }
+  "dependencies": {}
 }
