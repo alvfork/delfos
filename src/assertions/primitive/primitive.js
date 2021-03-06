@@ -57,3 +57,13 @@ export const isFunction = (value) => typeof value === 'function';
  */
 
 export const isUndefined = (value) => typeof value === 'undefined';
+
+/**
+ * Assert undefined type or null.
+ *
+ * @function
+ * @param {*} value
+ * @returns {boolean}
+ */
+
+export const isOptional = (value) => isUndefined(value) || isNull(value);

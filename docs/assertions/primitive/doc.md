@@ -18,6 +18,8 @@ sidebar_label: primitive
     -   [Parameters][10]
 -   [isUndefined][11]
     -   [Parameters][12]
+-   [isOptional][13]
+    -   [Parameters][14]
 
 ## isNull
 
@@ -27,7 +29,7 @@ Assert null type.
 
 -   `value`  
 
-Returns **[boolean][13]** 
+Returns **[boolean][15]** 
 
 ## isString
 
@@ -37,7 +39,7 @@ Assert string type.
 
 -   `value`  
 
-Returns **[boolean][13]** 
+Returns **[boolean][15]** 
 
 ## isNumber
 
@@ -47,7 +49,7 @@ Assert number type.
 
 -   `value`  
 
-Returns **[boolean][13]** 
+Returns **[boolean][15]** 
 
 ## isObject
 
@@ -57,7 +59,7 @@ Assert object type.
 
 -   `value`  
 
-Returns **[boolean][13]** 
+Returns **[boolean][15]** 
 
 ## isFunction
 
@@ -67,7 +69,7 @@ Assert function type.
 
 -   `value`  
 
-Returns **[boolean][13]** 
+Returns **[boolean][15]** 
 
 ## isUndefined
 
@@ -77,7 +79,17 @@ Assert undefined type.
 
 -   `value`  
 
-Returns **[boolean][13]** 
+Returns **[boolean][15]** 
+
+## isOptional
+
+Assert undefined type or null.
+
+### Parameters
+
+-   `value` **any** 
+
+Returns **[boolean][15]** 
 
 [1]: #isnull
 
@@ -103,4 +115,8 @@ Returns **[boolean][13]**
 
 [12]: #parameters-5
 
-[13]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[13]: #isoptional
+
+[14]: #parameters-6
+
+[15]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean

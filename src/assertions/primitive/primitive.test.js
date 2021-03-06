@@ -6,6 +6,7 @@ import {
   isObject,
   isFunction,
   isUndefined,
+  isOptional,
 } from './primitive';
 
 describe('========= Primitive assertions ========= ', () => {
@@ -81,5 +82,17 @@ describe('========= Primitive assertions ========= ', () => {
     it('When value is null', () => expect(isUndefined(null)).to.be.false);
     it('When value is false', () => expect(isUndefined(false)).to.be.false);
     it('When value is a number', () => expect(isUndefined(0)).to.be.false);
+  });
+
+  describe('- Fuction: isOptional(value)', () => {
+    it('When value is undefined', () =>
+      expect(isOptional(undefined)).to.be.true);
+    it('When value is null', () => expect(isOptional(null)).to.be.true);
+    it('When value is a function', () =>
+      expect(isOptional(() => {})).to.be.false);
+    it('When value is an empty object', () =>
+      expect(isOptional({})).to.be.false);
+    it('When value is false', () => expect(isOptional(false)).to.be.false);
+    it('When value is a number', () => expect(isOptional(0)).to.be.false);
   });
 });
