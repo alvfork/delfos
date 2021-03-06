@@ -9,8 +9,9 @@ sidebar_label: email
 -   [isEmail][1]
     -   [Parameters][2]
     -   [Examples][3]
--   [isEmailOrEmpty][4]
+-   [isOptionalEmail][4]
     -   [Parameters][5]
+    -   [Examples][6]
 
 ## isEmail
 
@@ -18,23 +19,33 @@ Assert string type and valid email. The max length of email is 128 characters
 
 ### Parameters
 
--   `value` **[string][6]** 
+-   `value` **any** 
 
 ### Examples
 
 ```javascript
-isEmail('orestes@delfos.com');  // true
+isEmail('apolo@delfos.com');  // true
 ```
 
 Returns **[boolean][7]** 
 
-## isEmailOrEmpty
+## isOptionalEmail
 
-Assert string type, empty string or valid email. The max length of email is 128 characters
+Assert undefined type, empty string, null or valid email.
+ The max length of email is 128 characters
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
+
+### Examples
+
+```javascript
+isEmail('');                       // true
+isEmail(null);                     // true
+isEmail(undefined);                // true
+isEmail('laeonidas@delfos.com');   // true
+```
 
 Returns **[boolean][7]** 
 
@@ -44,10 +55,10 @@ Returns **[boolean][7]**
 
 [3]: #examples
 
-[4]: #isemailorempty
+[4]: #isoptionalemail
 
 [5]: #parameters-1
 
-[6]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[6]: #examples-1
 
 [7]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
