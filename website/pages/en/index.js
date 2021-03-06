@@ -101,7 +101,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              'The idea behind this little library is that by using it we can focus on building awesome things, instead of spending time on implementing simple and boring, but important and necessary validation functions in JS. Let\'s develop together so we can enjoy more time to build the really important things.',
+              'The idea behind this little library is that by using it we can focus on building awesome things, instead of spending time on implementing simple and routinary, but important and necessary validation functions in JS. Let\'s develop together so we can enjoy more time to build the really important things.',
             image: `${baseUrl}img/undraw_to_the_moon.svg`,
             imageAlign: 'left',
             title: 'Focus on what matters',

@@ -3,13 +3,6 @@
   "version": "0.0.0-development",
   "description": "Tiny set of assertions, useful for common validations",
   "main": "dist/index.js",
-  "nyc": {
-    "all": false,
-    "include": [
-      "src/**/*.js",
-      "src/*.js"
-    ]
-  },
   "scripts": {
     "commit": "git-cz",
     "test": "mocha --recursive \"src/*$MATCH*/*.test.js\" --require @babel/register",
@@ -17,7 +10,7 @@
     "cover": "nyc --reporter=lcov npm test",
     "summary:cover": "nyc npm test",
     "semantic-release": "semantic-release",
-    "my-check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
@@ -86,8 +79,7 @@
   "lint-staged": {
     "src/**/*.js": [
       "npx eslint --ext .js",
-      "npm run cover",
-      "npm run my-check-coverage"
+      "npm run cover && npm run check-coverage"
     ]
   },
   "config": {

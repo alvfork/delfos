@@ -8,8 +8,10 @@ const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))
  * Assert string type and valid email. The max length of email is 128 characters
  *
  * @function
- * @param value
+ * @param {string} value
  * @returns {boolean}
+ * @example
+ * isEmail('orestes@delfos.com');  // true
  */
 
 export const isEmail = (value) => {
@@ -21,8 +23,11 @@ export const isEmail = (value) => {
  *  Assert string type, empty string or valid email. The max length of email is 128 characters
  *
  * @function
- * @param value
+ * @param {string} value
  * @returns {boolean}
+ * isEmail('orestes@delfos.com');  // true
+ * isEmail('');  // true
+ * isEmail('');  // true
  */
 
 export const isEmailOrEmpty = (value) => {

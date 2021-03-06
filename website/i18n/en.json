@@ -5,21 +5,29 @@
     "previous": "Previous",
     "tagline": "Useful pocket assertions.",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
+      "assertions/internet/doc": {
+        "title": "internet",
+        "sidebar_label": "internet"
       },
-      "doc2": {
-        "title": "document number 2"
+      "assertions/internet/email/doc": {
+        "title": "email",
+        "sidebar_label": "email"
       },
-      "doc3": {
-        "title": "This is document number 3"
+      "assertions/internet/url/doc": {
+        "title": "url",
+        "sidebar_label": "url"
       },
-      "doc4": {
-        "title": "Other Document"
+      "assertions/primitive/doc": {
+        "title": "primitive",
+        "sidebar_label": "primitive"
       },
-      "doc5": {
-        "title": "Fifth Document"
+      "assertions/strings/doc": {
+        "title": "strings",
+        "sidebar_label": "strings"
+      },
+      "doc": {
+        "title": "Docs",
+        "sidebar_label": "Docs"
       }
     },
     "links": {
@@ -27,9 +35,10 @@
       "Users": "Users"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "Delfos": "Delfos",
+      "Internet": "Internet",
+      "Primitive": "Primitive",
+      "Strings": "Strings"
     }
   },
   "pages-strings": {

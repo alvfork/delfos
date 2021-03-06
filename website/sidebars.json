@@ -1,10 +1,8 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Delfos": ["doc"],
+    "Internet": ["assertions/internet/email/doc", "assertions/internet/url/doc"],
+    "Primitive": ["assertions/primitive/doc"],
+    "Strings": ["assertions/strings/doc"]
   }
 }

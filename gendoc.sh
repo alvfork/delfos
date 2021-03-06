@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# It may be useful some day :)
-
 function depth() {
   if [[ -d $1 ]]; then
     for insided in $1/* ; do (
@@ -13,12 +11,14 @@ function depth() {
         path=${insided##*/src}
         finalpath="$(echo "$path" | sed 's/\/[a-zA-Z]*.js//')"
         documentation build $insided -f md --shallow > ./docs$finalpath/doc.md
+        title="${finalpath##*/}"
+        echo -e "---\ntitle: $title\nsidebar_label: $title\n---\n$(cat ./docs$finalpath/doc.md)" > ./docs$finalpath/doc.md
       fi
     ); done
   fi
 }
 
-rm -r docs/*
+find docs/* -maxdepth 0 -type d -exec rm -rf "{}" \;
 echo "Generating docs..."
 for srcd in ./src/* ; do (
   if [[ -d $srcd ]]; then
