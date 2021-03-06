@@ -28,10 +28,10 @@ export const isEmail = (value) => {
  * @param {*} value
  * @returns {boolean}
  * @example
- * isEmail('');                       // true
- * isEmail(null);                     // true
- * isEmail(undefined);                // true
- * isEmail('laeonidas@delfos.com');   // true
+ * isOptionalEmail('');                       // true
+ * isOptionalEmail(null);                     // true
+ * isOptionalEmail(undefined);                // true
+ * isOptionalEmail('laeonidas@delfos.com');   // true
  */
 
 export const isOptionalEmail = (value) => {

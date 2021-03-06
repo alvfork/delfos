@@ -15,7 +15,8 @@ sidebar_label: email
 
 ## isEmail
 
-Assert string type and valid email. The max length of email is 128 characters
+Assert string type and valid email. The max length of the email is 128
+characters
 
 ### Parameters
 
@@ -32,7 +33,7 @@ Returns **[boolean][7]**
 ## isOptionalEmail
 
 Assert undefined type, empty string, null or valid email.
- The max length of email is 128 characters
+The max length of email is 128 characters
 
 ### Parameters
 
@@ -41,10 +42,10 @@ Assert undefined type, empty string, null or valid email.
 ### Examples
 
 ```javascript
-isEmail('');                       // true
-isEmail(null);                     // true
-isEmail(undefined);                // true
-isEmail('laeonidas@delfos.com');   // true
+isOptionalEmail('');                       // true
+isOptionalEmail(null);                     // true
+isOptionalEmail(undefined);                // true
+isOptionalEmail('laeonidas@delfos.com');   // true
 ```
 
 Returns **[boolean][7]** 
