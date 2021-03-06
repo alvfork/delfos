@@ -5,7 +5,8 @@ const MAX_EMAIL_LENGTH = 128;
 const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 /**
- * Assert string type and valid email. The max length of email is 128 characters
+ * Assert string type and valid email. The max length of the email is 128
+ * characters
  *
  * @function
  * @param {*} value
@@ -20,8 +21,8 @@ export const isEmail = (value) => {
 };
 
 /**
- *  Assert undefined type, empty string, null or valid email.
- *  The max length of email is 128 characters
+ * Assert undefined type, empty string, null or valid email.
+ * The max length of email is 128 characters
  *
  * @function
  * @param {*} value
