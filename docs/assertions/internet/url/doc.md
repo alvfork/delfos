@@ -8,35 +8,58 @@ sidebar_label: url
 
 -   [isUrl][1]
     -   [Parameters][2]
--   [isUrlOrEmpty][3]
-    -   [Parameters][4]
+    -   [Examples][3]
+-   [isOptionalUrl][4]
+    -   [Parameters][5]
+    -   [Examples][6]
 
 ## isUrl
 
-Assert string type, filled and valid URL. The max length of URL is 2048 characters.
+Assert string type, filled and valid URL. The max length of the URL is 2048
+characters.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][5]** 
+### Examples
 
-## isUrlOrEmpty
+```javascript
+isUrl('https://www.npmjs.com/package/delfos');  // true
+```
 
-Assert string type, empty string or valid URL. The max length of URL is 2048 characters.
+Returns **[boolean][7]** 
+
+## isOptionalUrl
+
+Assert string type, empty string or valid URL. The max length of URL is 2048
+characters.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][5]** 
+### Examples
+
+```javascript
+isOptionalUrl('');                                 // true
+isOptionalUrl(null);                               // true
+isOptionalUrl(undefined);                          // true
+isOptionalUrl('https://www.ancient.eu/Athens/');   // true
+```
+
+Returns **[boolean][7]** 
 
 [1]: #isurl
 
 [2]: #parameters
 
-[3]: #isurlorempty
+[3]: #examples
 
-[4]: #parameters-1
+[4]: #isoptionalurl
 
-[5]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[5]: #parameters-1
+
+[6]: #examples-1
+
+[7]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean

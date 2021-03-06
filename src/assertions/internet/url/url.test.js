@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 
-import {isUrl, isUrlOrEmpty} from './url';
+import {isUrl, isOptionalUrl} from './url';
 
 describe('========= Url assertions ========= ', () => {
   describe('- Fuction: isUrl(value)', () => {
@@ -17,21 +17,23 @@ describe('========= Url assertions ========= ', () => {
     it('When value is null', () => expect(isUrl(null)).to.be.false);
     it('When value is undefined', () => expect(isUrl(undefined)).to.be.false);
   });
+
   describe('- Fuction: isUrlOrEmpty(value)', () => {
     it('When value is an url', () =>
-      expect(isUrlOrEmpty('google.com')).to.be.true);
+      expect(isOptionalUrl('google.com')).to.be.true);
     it('When value is an url with www', () =>
-      expect(isUrlOrEmpty('www.google.com')).to.be.true);
+      expect(isOptionalUrl('www.google.com')).to.be.true);
     it('When value is an url with http', () =>
-      expect(isUrlOrEmpty('http://www.google.com')).to.be.true);
+      expect(isOptionalUrl('http://www.google.com')).to.be.true);
     it('When value is an url with https', () =>
-      expect(isUrlOrEmpty('https://www.google.com')).to.be.true);
-    it('When value is empty', () => expect(isUrlOrEmpty('')).to.be.true);
-    it('When value is not an url', () =>
-      expect(isUrlOrEmpty('fool')).to.be.false);
-    it('When value is blank', () => expect(isUrlOrEmpty(' ')).to.be.false);
-    it('When value is null', () => expect(isUrlOrEmpty(null)).to.be.false);
+      expect(isOptionalUrl('https://www.google.com')).to.be.true);
+    it('When value is null', () => expect(isOptionalUrl(null)).to.be.true);
     it('When value is undefined', () =>
-      expect(isUrlOrEmpty(undefined)).to.be.false);
+      expect(isOptionalUrl(undefined)).to.be.true);
+    it('When value is empty', () => expect(isOptionalUrl('')).to.be.true);
+    it('When value is not an url', () =>
+      expect(isOptionalUrl('fool')).to.be.false);
+    it('When value is zero', () => expect(isOptionalUrl(0)).to.be.false);
+    it('When value is blank', () => expect(isOptionalUrl(' ')).to.be.false);
   });
 });
