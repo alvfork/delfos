@@ -1,11 +1,13 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
-/* your custom css */
+h2, h3, h1, a {
+  font-family: 'Source Code Pro', monospace !important;
+}
+
+.blockContent {
+  text-align: left;
+}
+
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
