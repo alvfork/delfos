@@ -42,27 +42,7 @@ We intend to offer a tiny solution that provides concrete and essential validati
 
 # Usage
 
-- **[Documentation](https://mochajs.org/)**
-
-```js
-import {isFilledString, isBlankString} from 'delfos';
-
-isFilledString('foo')  // true
-isFilledString(null)   // false
-isFilledString('')     // false
-isFilledString('  ')   // false
-
-isBlankString('')      // true
-isBlankString(' ')     // true
-isBlankString('foo')   // false
-isBlankString(null)    // false
-```
->Please note that `!isBlankString` is not equivalent to `isFilledString`, e.g.
->```js
->!isBlankString(369)     // true
->isFilledString(369)     // false
->```
->If you need to validate the condition that the value is a string and that it is not blank, please use `isFilledString`
+- **[Documentation](https://alvfork.github.io/delfos/)**
 
 # Collaborate
 If you want to collaborate in any way with this project, or if you want to contribute with a suggestion or opinion, go ahead. We thank you in advance.
