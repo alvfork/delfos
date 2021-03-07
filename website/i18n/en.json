@@ -5,10 +5,6 @@
     "previous": "Previous",
     "tagline": "Useful pocket assertions.",
     "docs": {
-      "assertions/internet/doc": {
-        "title": "internet",
-        "sidebar_label": "internet"
-      },
       "assertions/internet/email/doc": {
         "title": "email",
         "sidebar_label": "email"

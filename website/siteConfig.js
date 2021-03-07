@@ -14,7 +14,7 @@ const users = [
     caption: 'Clustergy',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/clustergy.jpeg',
+    image: 'https://storage.googleapis.com/clustergy-assets/brand/clustergy.jpeg',
     infoLink: 'https://www.clustergy.com',
     pinned: true,
   },
