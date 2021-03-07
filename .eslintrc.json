@@ -6,12 +6,14 @@
       "node": true
     },
     "extends": [
-      "airbnb-base",
-      "prettier"
+      "airbnb",
+      "prettier",
+      "plugin:jsdoc/recommended"
     ],
     "plugins": [
       "prettier",
-      "import"
+      "import",
+      "jsdoc"
     ],
     "settings": {
       "import/resolver": {

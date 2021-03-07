@@ -47,13 +47,18 @@
     "codecov.io": "0.1.6",
     "commitizen": "4.2.3",
     "cz-conventional-changelog": "3.3.0",
+    "documentation": "^13.1.1",
+    "docusaurus": "^1.14.6",
     "eslint": "7.18.0",
-    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "7.2.0",
     "eslint-mdx": "1.8.2",
     "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsdoc": "^32.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-mdx": "1.8.2",
     "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "^7.22.0",
     "husky": "4.3.8",
     "json-loader": "0.5.7",
     "lint-staged": "10.5.3",
@@ -72,7 +77,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "src/**/*.js": [
       "npx eslint --ext .js",
       "npm run cover && npm run check-coverage"
     ]
@@ -91,5 +96,6 @@
     "branches": [
       "main"
     ]
-  }
+  },
+  "dependencies": {}
 }
