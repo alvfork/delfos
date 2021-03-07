@@ -20,7 +20,7 @@ describe('========= Primitive assertions ========= ', () => {
     it('When value is a function', () => expect(isNull(() => {})).to.be.false);
   });
   describe('- Fuction: isString(value)', () => {
-    it('When value is string', () => expect(isString('fool')).to.be.true);
+    it('When value is string', () => expect(isString('star')).to.be.true);
     it('When value is an empty string', () => expect(isString('')).to.be.true);
     it('When value is null', () => expect(isString(null)).to.be.false);
     it('When value is undefined', () =>
@@ -49,7 +49,7 @@ describe('========= Primitive assertions ========= ', () => {
 
   describe('- Fuction: isObject(value)', () => {
     it('When value is an object', () =>
-      expect(isObject({fool: 'fool'})).to.be.true);
+      expect(isObject({star: 'star'})).to.be.true);
     it('When value is an empty object', () => expect(isObject({})).to.be.true);
     it('When value is null', () => expect(isObject(null)).to.be.true);
     it('When value is undefined', () =>

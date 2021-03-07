@@ -11,7 +11,7 @@ describe('========= Url assertions ========= ', () => {
       expect(isUrl('http://www.google.com')).to.be.true);
     it('When value is an url with https', () =>
       expect(isUrl('https://www.google.com')).to.be.true);
-    it('When value is not an url', () => expect(isUrl('fool')).to.be.false);
+    it('When value is not an url', () => expect(isUrl('star')).to.be.false);
     it('When value is empty', () => expect(isUrl('')).to.be.false);
     it('When value is blank', () => expect(isUrl(' ')).to.be.false);
     it('When value is null', () => expect(isUrl(null)).to.be.false);
@@ -32,7 +32,7 @@ describe('========= Url assertions ========= ', () => {
       expect(isOptionalUrl(undefined)).to.be.true);
     it('When value is empty', () => expect(isOptionalUrl('')).to.be.true);
     it('When value is not an url', () =>
-      expect(isOptionalUrl('fool')).to.be.false);
+      expect(isOptionalUrl('star')).to.be.false);
     it('When value is zero', () => expect(isOptionalUrl(0)).to.be.false);
     it('When value is blank', () => expect(isOptionalUrl(' ')).to.be.false);
   });

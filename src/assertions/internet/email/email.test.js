@@ -5,14 +5,14 @@ import {isEmail, isOptionalEmail} from './email';
 describe('========= Email assertions ========= ', () => {
   describe('- Fuction: isEmail(value)', () => {
     it('When value is an email', () =>
-      expect(isEmail('fool@gmail.com')).to.be.true);
+      expect(isEmail('star@gmail.com')).to.be.true);
     it('When value is an email with .', () =>
-      expect(isEmail('fool.fool@gmail.com')).to.be.true);
+      expect(isEmail('star.star@gmail.com')).to.be.true);
     it('When value is an email with -', () =>
-      expect(isEmail('fool-fool@gmail.com')).to.be.true);
+      expect(isEmail('star-star@gmail.com')).to.be.true);
     it('When value is an email with . at start', () =>
-      expect(isEmail('.fool@gmail.com')).to.be.false);
-    it('When value is not an email', () => expect(isEmail('fool')).to.be.false);
+      expect(isEmail('.star@gmail.com')).to.be.false);
+    it('When value is not an email', () => expect(isEmail('star')).to.be.false);
     it('When value is empty', () => expect(isEmail('')).to.be.false);
     it('When value is blank', () => expect(isEmail(' ')).to.be.false);
     it('When value is null', () => expect(isEmail(null)).to.be.false);
@@ -20,19 +20,19 @@ describe('========= Email assertions ========= ', () => {
   });
   describe('- Fuction: isOptionalEmail(value)', () => {
     it('When value is an email', () =>
-      expect(isOptionalEmail('fool@gmail.com')).to.be.true);
+      expect(isOptionalEmail('star@gmail.com')).to.be.true);
     it('When value is an email with .', () =>
-      expect(isOptionalEmail('fool.fool@gmail.com')).to.be.true);
+      expect(isOptionalEmail('star.star@gmail.com')).to.be.true);
     it('When value is an email with -', () =>
-      expect(isOptionalEmail('fool-fool@gmail.com')).to.be.true);
+      expect(isOptionalEmail('star-star@gmail.com')).to.be.true);
     it('When value is empty', () => expect(isOptionalEmail('')).to.be.true);
     it('When value is null', () => expect(isOptionalEmail(null)).to.be.true);
     it('When value is undefined', () =>
       expect(isOptionalEmail(undefined)).to.be.true);
     it('When value is an email with . at start', () =>
-      expect(isOptionalEmail('.fool@gmail.com')).to.be.false);
+      expect(isOptionalEmail('.star@gmail.com')).to.be.false);
     it('When value is not an email', () =>
-      expect(isOptionalEmail('fool')).to.be.false);
+      expect(isOptionalEmail('star')).to.be.false);
     it('When value is zero', () => expect(isOptionalEmail(0)).to.be.false);
     it('When value is blank', () => expect(isOptionalEmail(' ')).to.be.false);
   });

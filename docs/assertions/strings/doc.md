@@ -8,14 +8,19 @@ sidebar_label: strings
 
 -   [isEmptyString][1]
     -   [Parameters][2]
--   [isNullOrEmptyString][3]
-    -   [Parameters][4]
--   [isBlankString][5]
-    -   [Parameters][6]
--   [isFilledString][7]
+    -   [Examples][3]
+-   [isNullOrEmptyString][4]
+    -   [Parameters][5]
+    -   [Examples][6]
+-   [isBlankString][7]
     -   [Parameters][8]
--   [isStringLengthValid][9]
-    -   [Parameters][10]
+    -   [Examples][9]
+-   [isFilledString][10]
+    -   [Parameters][11]
+    -   [Examples][12]
+-   [isStringLengthValid][13]
+    -   [Parameters][14]
+    -   [Examples][15]
 
 ## isEmptyString
 
@@ -23,9 +28,18 @@ Assert string type and empty string.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][11]** 
+### Examples
+
+```javascript
+isEmptyString('');         // true
+isEmptyString(' ');        // false
+isEmptyString(null);       // false
+isEmptyString(undefined);  // false
+```
+
+Returns **[boolean][16]** 
 
 ## isNullOrEmptyString
 
@@ -33,9 +47,18 @@ Assert string type and empty string, or null type.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][11]** 
+### Examples
+
+```javascript
+isNullOrEmptyString('');         // true
+isNullOrEmptyString(undefined);  // true
+isNullOrEmptyString(' ');        // false
+isNullOrEmptyString(null);       // false
+```
+
+Returns **[boolean][16]** 
 
 ## isBlankString
 
@@ -43,9 +66,18 @@ Assert string type and string contains blanks.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][11]** 
+### Examples
+
+```javascript
+isBlankString('');         // true
+isBlankString(' ');        // true
+isBlankString(undefined);  // false
+isBlankString(null);       // false
+```
+
+Returns **[boolean][16]** 
 
 ## isFilledString
 
@@ -53,9 +85,20 @@ Assert string type and string contains only blanks.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][11]** 
+### Examples
+
+```javascript
+isFilledString('Delfos');    // true
+isFilledString('');          // false
+isFilledString(' ');         // false
+isFilledString(369);         // false
+isFilledString(null);        // false
+isFilledString(undefined);   // false
+```
+
+Returns **[boolean][16]** 
 
 ## isStringLengthValid
 
@@ -63,32 +106,51 @@ Assert string type and string length is between top and floor parameters.
 
 ### Parameters
 
--   `value`  
--   `top` **[number][12]** 
--   `floor` **[number][12]**  (optional, default `0`)
+-   `value` **any** 
+-   `top` **[number][17]** 
+-   `floor` **[number][17]**  (optional, default `0`)
 
-Returns **[boolean][11]** 
+### Examples
+
+```javascript
+isStringLengthValid('Delfos', 6);      // true
+isStringLengthValid('Delfos', 6, 2);   // true
+isStringLengthValid('Delfos', 3, 2);   // false
+isStringLengthValid('Delfos', 14, 8);  // false
+```
+
+Returns **[boolean][16]** 
 
 [1]: #isemptystring
 
 [2]: #parameters
 
-[3]: #isnulloremptystring
+[3]: #examples
 
-[4]: #parameters-1
+[4]: #isnulloremptystring
 
-[5]: #isblankstring
+[5]: #parameters-1
 
-[6]: #parameters-2
+[6]: #examples-1
 
-[7]: #isfilledstring
+[7]: #isblankstring
 
-[8]: #parameters-3
+[8]: #parameters-2
 
-[9]: #isstringlengthvalid
+[9]: #examples-2
 
-[10]: #parameters-4
+[10]: #isfilledstring
 
-[11]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[11]: #parameters-3
 
-[12]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[12]: #examples-3
+
+[13]: #isstringlengthvalid
+
+[14]: #parameters-4
+
+[15]: #examples-4
+
+[16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number

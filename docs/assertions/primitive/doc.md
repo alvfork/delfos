@@ -8,18 +8,25 @@ sidebar_label: primitive
 
 -   [isNull][1]
     -   [Parameters][2]
--   [isString][3]
-    -   [Parameters][4]
--   [isNumber][5]
-    -   [Parameters][6]
--   [isObject][7]
+    -   [Examples][3]
+-   [isString][4]
+    -   [Parameters][5]
+    -   [Examples][6]
+-   [isNumber][7]
     -   [Parameters][8]
--   [isFunction][9]
-    -   [Parameters][10]
--   [isUndefined][11]
-    -   [Parameters][12]
--   [isOptional][13]
+    -   [Examples][9]
+-   [isObject][10]
+    -   [Parameters][11]
+    -   [Examples][12]
+-   [isFunction][13]
     -   [Parameters][14]
+    -   [Examples][15]
+-   [isUndefined][16]
+    -   [Parameters][17]
+    -   [Examples][18]
+-   [isOptional][19]
+    -   [Parameters][20]
+    -   [Examples][21]
 
 ## isNull
 
@@ -27,9 +34,15 @@ Assert null type.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][15]** 
+### Examples
+
+```javascript
+isString('delfos');  // true
+```
+
+Returns **[boolean][22]** 
 
 ## isString
 
@@ -37,9 +50,15 @@ Assert string type.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][15]** 
+### Examples
+
+```javascript
+isString('delfos');  // true
+```
+
+Returns **[boolean][22]** 
 
 ## isNumber
 
@@ -47,9 +66,15 @@ Assert number type.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][15]** 
+### Examples
+
+```javascript
+isNumber(369);  // true
+```
+
+Returns **[boolean][22]** 
 
 ## isObject
 
@@ -57,9 +82,15 @@ Assert object type.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][15]** 
+### Examples
+
+```javascript
+isObject({name: 'Delfos', version: 'v3.6.9'});  // true
+```
+
+Returns **[boolean][22]** 
 
 ## isFunction
 
@@ -67,9 +98,15 @@ Assert function type.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][15]** 
+### Examples
+
+```javascript
+isFunction(() => {});  // true
+```
+
+Returns **[boolean][22]** 
 
 ## isUndefined
 
@@ -77,9 +114,15 @@ Assert undefined type.
 
 ### Parameters
 
--   `value`  
+-   `value` **any** 
 
-Returns **[boolean][15]** 
+### Examples
+
+```javascript
+isUndefined(undefined);  // true
+```
+
+Returns **[boolean][22]** 
 
 ## isOptional
 
@@ -89,34 +132,55 @@ Assert undefined type or null.
 
 -   `value` **any** 
 
-Returns **[boolean][15]** 
+### Examples
+
+```javascript
+isOptional(null);       // true
+isOptional(undefined);  // true
+```
+
+Returns **[boolean][22]** 
 
 [1]: #isnull
 
 [2]: #parameters
 
-[3]: #isstring
+[3]: #examples
 
-[4]: #parameters-1
+[4]: #isstring
 
-[5]: #isnumber
+[5]: #parameters-1
 
-[6]: #parameters-2
+[6]: #examples-1
 
-[7]: #isobject
+[7]: #isnumber
 
-[8]: #parameters-3
+[8]: #parameters-2
 
-[9]: #isfunction
+[9]: #examples-2
 
-[10]: #parameters-4
+[10]: #isobject
 
-[11]: #isundefined
+[11]: #parameters-3
 
-[12]: #parameters-5
+[12]: #examples-3
 
-[13]: #isoptional
+[13]: #isfunction
 
-[14]: #parameters-6
+[14]: #parameters-4
 
-[15]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[15]: #examples-4
+
+[16]: #isundefined
+
+[17]: #parameters-5
+
+[18]: #examples-5
+
+[19]: #isoptional
+
+[20]: #parameters-6
+
+[21]: #examples-6
+
+[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
