@@ -12,6 +12,8 @@ notifications:
   email: alvaro@clustergy.com
 before_install:
   - npm i -g npm@^6.0.0
+install:
+  - npm install
 before_script:
   - npm prune
 script:
