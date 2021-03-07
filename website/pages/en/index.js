@@ -101,7 +101,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              'The idea behind this little library is that by using it we can focus on building awesome things, instead of spending time on implementing simple and routinary, but important and necessary validation functions in JS. Let\'s develop together so we can enjoy more time to build the really important things.',
+              'We are building this library intending to allow us to focus on building awesome things instead of spending time implementing tedious validation functions in JS. What about performance? Don\'t worry, we\'re working hard to keep it compact and robust.',
             image: `${baseUrl}img/undraw_to_the_moon.svg`,
             imageAlign: 'left',
             title: 'Focus on what matters',
@@ -129,7 +129,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              'We intend to offer a tiny solution that provides concrete and essential validations for projects that do not require out-of-the-ordinary validations. Currently, there are excellent libraries that offer large sets of functions to build validations, however, the focus here is to offer the essential ones to maintain a compact library.',
+              'We intend to offer a pocket solution that provides concrete and essential validations for projects that do not require out-of-the-ordinary validations. Currently, there are great libraries that offer large sets of functions to build validations, however, the focus here is to offer the essential ones to maintain a compact library.',
             image: `${baseUrl}img/undraw_Code_typing.svg`,
             imageAlign: 'right',
             title: 'Why?',
