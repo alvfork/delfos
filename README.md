@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://delfos.github.io">
+  <a href="https://alvfork.github.io/delfos">
       <img src="https://storage.googleapis.com/clustergy-assets/brand/delfos128.png" width="128px" />
   </a>
 </p>
