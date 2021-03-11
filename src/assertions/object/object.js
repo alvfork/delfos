@@ -1,4 +1,4 @@
-import {isObject} from '../primitive/primitive';
+import {isObject} from '../basics/basics';
 
 /**
  * Assert object type and non-null value.

@@ -41,7 +41,6 @@ const siteConfig = {
     {doc: 'doc', label: 'Docs'},
  /*    {doc: 'assertions/internet/email/doc', label: 'Internet'},
     {doc: 'assertions/internet/url/doc', label: 'URL'},
-    {doc: 'assertions/primitive/doc', label: 'Primitive'},
     {doc: 'assertions/strings/doc', label: 'Strings'}, */
     {page: 'users', label: 'Users'},
   ],

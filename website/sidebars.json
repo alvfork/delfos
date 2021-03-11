@@ -1,9 +1,7 @@
 {
   "docs": {
     "Delfos": ["doc"],
-    "Internet": ["assertions/internet/email/doc", "assertions/internet/url/doc"],
-    "Primitive": ["assertions/primitive/doc"],
-    "Strings": ["assertions/strings/doc"],
-    "Object": ["assertions/object/doc"]
+    "Essential": ["assertions/basics/doc", "assertions/strings/doc", "assertions/object/doc"],
+    "Internet": ["assertions/internet/email/doc", "assertions/internet/url/doc"]
   }
 }

@@ -6,7 +6,7 @@ import {
   isFunction,
   isUndefined,
   isOptional,
-} from './assertions/primitive/primitive';
+} from './assertions/basics/basics';
 
 import {
   isEmptyString,
@@ -15,6 +15,8 @@ import {
   isFilledString,
   isStringLengthValid,
 } from './assertions/strings/strings';
+
+import {isNotNullObject, isEmptyObject} from './assertions/object/object';
 
 import {isUrl, isOptionalUrl} from './assertions/internet/url/url';
 
@@ -34,6 +36,9 @@ module.exports = {
   isBlankString,
   isFilledString,
   isStringLengthValid,
+
+  isNotNullObject,
+  isEmptyObject,
 
   isUrl,
   isOptionalUrl,

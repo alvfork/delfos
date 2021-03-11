@@ -24,14 +24,17 @@ Assert object type and non-null value.
 ### Examples
 
 ```javascript
-isEmptyObject({});  // true
+isNotNullObject({});                                    // true
+isNotNullObject({name: 'Delfos', version: 'v3.6.9'});   // true
+isNotNullObject(null);                                  // false
+isNotNullObject(undefined);                             // false
 ```
 
 Returns **[boolean][7]** 
 
 ## isEmptyObject
 
-Assert object type, non-null value and presence of at least one property.
+Assert object type, non-null value, and presence of at least one property.
 
 ### Parameters
 
@@ -40,9 +43,10 @@ Assert object type, non-null value and presence of at least one property.
 ### Examples
 
 ```javascript
-isEmptyObject({});    // true
-isEmptyObject(null);  // false
-isEmptyObject({name: 'Delfos', version: 'v3.6.9'});  // false
+isEmptyObject({});                                      // true
+isEmptyObject(null);                                    // false
+isEmptyObject(undefined);                               // false
+isEmptyObject({name: 'Delfos', version: 'v3.6.9'});     // false
 ```
 
 Returns **[boolean][7]** 

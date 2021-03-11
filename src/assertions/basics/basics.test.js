@@ -7,9 +7,9 @@ import {
   isFunction,
   isUndefined,
   isOptional,
-} from './primitive';
+} from './basics';
 
-describe('========= Primitive assertions ========= ', () => {
+describe('========= Basics assertions ========= ', () => {
   describe('- Fuction: isNull(value)', () => {
     it('When value is null', () => expect(isNull(null)).to.be.true);
     it('When value is undefined', () => expect(isNull(undefined)).to.be.false);

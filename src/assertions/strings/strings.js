@@ -1,4 +1,4 @@
-import {isNull, isString} from '../primitive/primitive';
+import {isNull, isString} from '../basics/basics';
 
 /**
  * Assert string type and empty string.

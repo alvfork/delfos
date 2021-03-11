@@ -5,6 +5,10 @@
     "previous": "Previous",
     "tagline": "Useful pocket assertions.",
     "docs": {
+      "assertions/basics/doc": {
+        "title": "basics",
+        "sidebar_label": "basics"
+      },
       "assertions/internet/email/doc": {
         "title": "email",
         "sidebar_label": "email"
@@ -16,10 +20,6 @@
       "assertions/object/doc": {
         "title": "object",
         "sidebar_label": "object"
-      },
-      "assertions/primitive/doc": {
-        "title": "primitive",
-        "sidebar_label": "primitive"
       },
       "assertions/strings/doc": {
         "title": "strings",
@@ -37,9 +37,7 @@
     "categories": {
       "Delfos": "Delfos",
       "Internet": "Internet",
-      "Primitive": "Primitive",
-      "Strings": "Strings",
-      "Object": "Object"
+      "Essential": "Essential"
     }
   },
   "pages-strings": {
