@@ -19,6 +19,7 @@ describe('========= Basics assertions ========= ', () => {
     it('When value is a number', () => expect(isNull(1234)).to.be.false);
     it('When value is a function', () => expect(isNull(() => {})).to.be.false);
   });
+
   describe('- Fuction: isString(value)', () => {
     it('When value is string', () => expect(isString('star')).to.be.true);
     it('When value is an empty string', () => expect(isString('')).to.be.true);
