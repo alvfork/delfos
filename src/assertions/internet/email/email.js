@@ -15,10 +15,10 @@ const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))
  * isEmail('apolo@delfos.com');  // true
  */
 
-export const isEmail = (value) => {
-  if (!isFilledString(value) || value.length > MAX_EMAIL_LENGTH) return false;
-  return EMAIL_REGEX.test(value);
-};
+export const isEmail = (value) =>
+  !isFilledString(value) || value.length > MAX_EMAIL_LENGTH
+    ? false
+    : EMAIL_REGEX.test(value);
 
 /**
  * Assert undefined type, empty string, null or valid email.
@@ -36,6 +36,7 @@ export const isEmail = (value) => {
 
 export const isOptionalEmail = (value) => {
   if (isOptional(value) || isEmptyString(value)) return true;
+
   if (isString(value) && value.length < MAX_EMAIL_LENGTH)
     return EMAIL_REGEX.test(value);
 
