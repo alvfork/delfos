@@ -1,5 +1,5 @@
 /**
- * Assert null type.
+ * Assert null value.
  *
  * @function
  * @param {*} value
@@ -71,7 +71,7 @@ export const isFunction = (value) => typeof value === 'function';
 export const isUndefined = (value) => typeof value === 'undefined';
 
 /**
- * Assert undefined type or null.
+ * Assert undefined type or value null.
  *
  * @function
  * @param {*} value
