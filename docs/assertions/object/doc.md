@@ -6,13 +6,16 @@ sidebar_label: object
 
 ### Table of Contents
 
--   [isEmptyObject][1]
+-   [isNotNullObject][1]
     -   [Parameters][2]
     -   [Examples][3]
+-   [isEmptyObject][4]
+    -   [Parameters][5]
+    -   [Examples][6]
 
-## isEmptyObject
+## isNotNullObject
 
-Assert null type.
+Assert object type and non-null value.
 
 ### Parameters
 
@@ -24,12 +27,36 @@ Assert null type.
 isEmptyObject({});  // true
 ```
 
-Returns **[boolean][4]** 
+Returns **[boolean][7]** 
 
-[1]: #isemptyobject
+## isEmptyObject
+
+Assert object type, non-null value and presence of at least one property.
+
+### Parameters
+
+-   `object` **any** 
+
+### Examples
+
+```javascript
+isEmptyObject({});    // true
+isEmptyObject(null);  // false
+isEmptyObject({name: 'Delfos', version: 'v3.6.9'});  // false
+```
+
+Returns **[boolean][7]** 
+
+[1]: #isnotnullobject
 
 [2]: #parameters
 
 [3]: #examples
 
-[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[4]: #isemptyobject
+
+[5]: #parameters-1
+
+[6]: #examples-1
+
+[7]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
