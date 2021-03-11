@@ -21,9 +21,9 @@
         "title": "object",
         "sidebar_label": "object"
       },
-      "assertions/strings/doc": {
-        "title": "strings",
-        "sidebar_label": "strings"
+      "assertions/string/doc": {
+        "title": "string",
+        "sidebar_label": "string"
       },
       "doc": {
         "title": "Docs",
@@ -36,8 +36,8 @@
     },
     "categories": {
       "Delfos": "Delfos",
-      "Internet": "Internet",
-      "Essential": "Essential"
+      "Essential": "Essential",
+      "Internet": "Internet"
     }
   },
   "pages-strings": {

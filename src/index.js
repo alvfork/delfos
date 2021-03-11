@@ -14,7 +14,7 @@ import {
   isBlankString,
   isFilledString,
   isStringLengthValid,
-} from './assertions/strings/strings';
+} from './assertions/string/string';
 
 import {isNotNullObject, isEmptyObject} from './assertions/object/object';
 

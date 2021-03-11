@@ -1,4 +1,4 @@
-import {isFilledString, isEmptyString} from '../../strings/strings';
+import {isFilledString, isEmptyString} from '../../string/string';
 import {isString, isOptional} from '../../basics/basics';
 
 const MAX_EMAIL_LENGTH = 128;
