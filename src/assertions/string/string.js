@@ -1,7 +1,7 @@
 import {isNull, isString} from '../basics/basics';
 
 /**
- * Assert string type and empty string.
+ * Assert string type and empty value.
  *
  * @function
  * @param {*} value
@@ -17,7 +17,7 @@ export const isEmptyString = (value) =>
   isString(value) ? value.length === 0 : false;
 
 /**
- * Assert string type and empty string, or null type.
+ * Assert string type and empty value, or null value.
  *
  * @function
  * @param {*} value
@@ -33,7 +33,7 @@ export const isNullOrEmptyString = (value) =>
   isString(value) ? value.length === 0 : isNull(value);
 
 /**
- * Assert string type and string contains blanks.
+ * Assert string type and empty value or null value.
  *
  * @function
  * @param {*} value
@@ -49,7 +49,7 @@ export const isBlankString = (value) =>
   isString(value) ? value.trim() === '' : false;
 
 /**
- * Assert string type and string contains only blanks.
+ * Assert string type and blank value.
  *
  * @function
  * @param {*} value
@@ -67,7 +67,7 @@ export const isFilledString = (value) =>
   isString(value) ? value.trim() !== '' : false;
 
 /**
- * Assert string type and string length is between top and floor parameters.
+ * Assert string type and length between top and floor parameters.
  *
  * @function
  * @param {*} value
