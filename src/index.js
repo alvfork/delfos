@@ -16,7 +16,11 @@ import {
   isStringLengthValid,
 } from './assertions/string/string';
 
-import {isNotNullObject, isEmptyObject} from './assertions/object/object';
+import {
+  isNotNullObject,
+  isEmptyObject,
+  hasProperty,
+} from './assertions/object/object';
 
 import {isUrl, isOptionalUrl} from './assertions/internet/url/url';
 
@@ -39,6 +43,7 @@ module.exports = {
 
   isNotNullObject,
   isEmptyObject,
+  hasProperty,
 
   isUrl,
   isOptionalUrl,

@@ -12,6 +12,9 @@ sidebar_label: object
 -   [isEmptyObject][4]
     -   [Parameters][5]
     -   [Examples][6]
+-   [hasProperty][7]
+    -   [Parameters][8]
+    -   [Examples][9]
 
 ## isNotNullObject
 
@@ -24,13 +27,13 @@ Assert object type and non-null value.
 ### Examples
 
 ```javascript
-isNotNullObject({});                                    // true
-isNotNullObject({name: 'Delfos', version: 'v3.6.9'});   // true
-isNotNullObject(null);                                  // false
-isNotNullObject(undefined);                             // false
+isNotNullObject({});                                  // true
+isNotNullObject({name: 'delfos', version: 'v3.6.9'}); // true
+isNotNullObject(null);                                // false
+isNotNullObject(undefined);                           // false
 ```
 
-Returns **[boolean][7]** 
+Returns **[boolean][10]** 
 
 ## isEmptyObject
 
@@ -43,13 +46,35 @@ Assert object type, non-null value, and presence of at least one property.
 ### Examples
 
 ```javascript
-isEmptyObject({});                                      // true
-isEmptyObject(null);                                    // false
-isEmptyObject(undefined);                               // false
-isEmptyObject({name: 'Delfos', version: 'v3.6.9'});     // false
+isEmptyObject({});                                  // true
+isEmptyObject(null);                                // false
+isEmptyObject(undefined);                           // false
+isEmptyObject({name: 'delfos', version: 'v3.6.9'}); // false
 ```
 
-Returns **[boolean][7]** 
+Returns **[boolean][10]** 
+
+## hasProperty
+
+Assert object type, non-null value, and presence of a specific property,
+this property must be at the first level of the indicated object.
+
+### Parameters
+
+-   `object` **any** 
+-   `property` **[string][11]** 
+
+### Examples
+
+```javascript
+hasProperty(name: 'Delfos', version: 'v3.6.9'}, 'name');             // true
+hasProperty({}, 'name');                                             // false
+hasProperty(null, 'name');                                           // false
+hasProperty(undefined, 'name');                                      // false
+hasProperty({package: {name: 'delfos', version: 'v3.6.9'}}, 'name'); // false
+```
+
+Returns **[boolean][10]** 
 
 [1]: #isnotnullobject
 
@@ -63,4 +88,12 @@ Returns **[boolean][7]**
 
 [6]: #examples-1
 
-[7]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[7]: #hasproperty
+
+[8]: #parameters-2
+
+[9]: #examples-2
+
+[10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[11]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
