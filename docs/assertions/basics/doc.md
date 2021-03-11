@@ -30,7 +30,7 @@ sidebar_label: basics
 
 ## isNull
 
-Assert null type.
+Assert null value.
 
 ### Parameters
 
@@ -126,7 +126,7 @@ Returns **[boolean][22]**
 
 ## isOptional
 
-Assert undefined type or null.
+Assert undefined type or value null.
 
 ### Parameters
 

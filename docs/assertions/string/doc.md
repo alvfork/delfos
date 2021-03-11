@@ -24,7 +24,7 @@ sidebar_label: string
 
 ## isEmptyString
 
-Assert string type and empty string.
+Assert string type and empty value.
 
 ### Parameters
 
@@ -43,7 +43,7 @@ Returns **[boolean][16]**
 
 ## isNullOrEmptyString
 
-Assert string type and empty string, or null type.
+Assert string type and empty value, or null value.
 
 ### Parameters
 
@@ -62,7 +62,7 @@ Returns **[boolean][16]**
 
 ## isBlankString
 
-Assert string type and string contains blanks.
+Assert string type and empty value or null value.
 
 ### Parameters
 
@@ -81,7 +81,7 @@ Returns **[boolean][16]**
 
 ## isFilledString
 
-Assert string type and string contains only blanks.
+Assert string type and blank value.
 
 ### Parameters
 
@@ -102,7 +102,7 @@ Returns **[boolean][16]**
 
 ## isStringLengthValid
 
-Assert string type and string length is between top and floor parameters.
+Assert string type and length between top and floor parameters.
 
 ### Parameters
 
