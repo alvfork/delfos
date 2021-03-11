@@ -13,6 +13,10 @@
         "title": "url",
         "sidebar_label": "url"
       },
+      "assertions/object/doc": {
+        "title": "object",
+        "sidebar_label": "object"
+      },
       "assertions/primitive/doc": {
         "title": "primitive",
         "sidebar_label": "primitive"
@@ -34,7 +38,8 @@
       "Delfos": "Delfos",
       "Internet": "Internet",
       "Primitive": "Primitive",
-      "Strings": "Strings"
+      "Strings": "Strings",
+      "Object": "Object"
     }
   },
   "pages-strings": {

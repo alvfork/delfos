@@ -3,6 +3,7 @@
     "Delfos": ["doc"],
     "Internet": ["assertions/internet/email/doc", "assertions/internet/url/doc"],
     "Primitive": ["assertions/primitive/doc"],
-    "Strings": ["assertions/strings/doc"]
+    "Strings": ["assertions/strings/doc"],
+    "Object": ["assertions/object/doc"]
   }
 }
