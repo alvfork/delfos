@@ -14,9 +14,7 @@
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
-    "build:main": "babel --ignore '**/*.test.js' --copy-files --no-copy-ignored --out-dir dist src",
-    "build:umd": "webpack --output-filename index.umd.js --mode development",
-    "build:umd.min": "webpack --output-filename index.umd.min.js --mode production"
+    "build:main": "babel --ignore '**/*.test.js' --copy-files --no-copy-ignored --no-comments --out-dir dist src"
   },
   "repository": {
     "type": "git",
@@ -43,6 +41,7 @@
     "@babel/preset-env": "7.12.11",
     "@babel/register": "7.12.10",
     "babel-loader": "8.2.2",
+    "babel-preset-minify": "0.5.1",
     "chai": "4.2.0",
     "codecov.io": "0.1.6",
     "commitizen": "4.2.3",
@@ -89,6 +88,7 @@
   },
   "babel": {
     "presets": [
+      "minify",
       "@babel/preset-env"
     ]
   },
