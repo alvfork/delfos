@@ -1,7 +1,7 @@
 {
   "docs": {
     "Delfos": ["doc"],
-    "Essential": ["assertions/basics/doc", "assertions/string/doc", "assertions/object/doc"],
-    "Internet": ["assertions/internet/email/doc", "assertions/internet/url/doc"]
+    "Essential": ["basics", "string", "object"],
+    "Internet": ["email", "url"]
   }
 }
