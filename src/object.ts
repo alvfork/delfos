@@ -13,7 +13,8 @@ import {isObject} from './basics';
  * isNotNullObject(undefined);                           // false
  */
 
-export const isNotNullObject = (object) => isObject(object) && object !== null;
+export const isNotNullObject = (object: any): boolean =>
+  isObject(object) && object !== null;
 
 /**
  * Assert object type, non-null value, and presence of at least one property.
@@ -28,7 +29,7 @@ export const isNotNullObject = (object) => isObject(object) && object !== null;
  * isEmptyObject({name: 'delfos', version: 'v3.6.9'}); // false
  */
 
-export const isEmptyObject = (object) =>
+export const isEmptyObject = (object: any): boolean =>
   isNotNullObject(object)
     ? object.constructor === Object && Object.keys(object).length === 0
     : false;
@@ -49,7 +50,7 @@ export const isEmptyObject = (object) =>
  * hasProperty({package: {name: 'delfos', version: 'v3.6.9'}}, 'name'); // false
  */
 
-export const hasProperty = (object, property) =>
+export const hasProperty = (object: any, property: string): boolean =>
   isNotNullObject(object)
     ? Object.prototype.hasOwnProperty.call(object, property)
     : false;

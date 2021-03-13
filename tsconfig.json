@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"outDir": "dist",
+		"module": "commonjs",
+		"target": "ES5",
+		"declaration": true,
+		"strict": true,
+    "removeComments": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"files": ["src/index.ts"],
+	"exclude": ["node_modules", "dist"]
+}
