@@ -1,5 +1,5 @@
-import {isFilledString, isEmptyString} from '../../string/string';
-import {isString, isOptional} from '../../basics/basics';
+import {isFilledString, isEmptyString} from './string';
+import {isString, isOptional} from './basics';
 
 const MAX_URL_LENGTH = 2048;
 const URL_REGEX = /[(http(s)?)://(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/;

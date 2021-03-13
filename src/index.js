@@ -6,7 +6,7 @@ import {
   isFunction,
   isUndefined,
   isOptional,
-} from './assertions/basics/basics';
+} from './basics';
 
 import {
   isEmptyString,
@@ -14,17 +14,13 @@ import {
   isBlankString,
   isFilledString,
   isStringLengthValid,
-} from './assertions/string/string';
+} from './string';
 
-import {
-  isNotNullObject,
-  isEmptyObject,
-  hasProperty,
-} from './assertions/object/object';
+import {isNotNullObject, isEmptyObject, hasProperty} from './object';
 
-import {isUrl, isOptionalUrl} from './assertions/internet/url/url';
+import {isUrl, isOptionalUrl} from './url';
 
-import {isEmail, isOptionalEmail} from './assertions/internet/email/email';
+import {isEmail, isOptionalEmail} from './email';
 
 module.exports = {
   isNull,

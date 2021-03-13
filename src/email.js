@@ -1,5 +1,5 @@
-import {isFilledString, isEmptyString} from '../../string/string';
-import {isString, isOptional} from '../../basics/basics';
+import {isFilledString, isEmptyString} from './string';
+import {isString, isOptional} from './basics';
 
 const MAX_EMAIL_LENGTH = 128;
 const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

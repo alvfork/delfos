@@ -1,4 +1,4 @@
-import {isObject} from '../basics/basics';
+import {isObject} from './basics';
 
 /**
  * Assert object type and non-null value.

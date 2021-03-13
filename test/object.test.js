@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 
-import {isNotNullObject, isEmptyObject, hasProperty} from './object';
+import {isNotNullObject, isEmptyObject, hasProperty} from '../src/object';
 
 const filledObject = {name: 'Delfos', version: 'v3.6.9'};
 const deepFilledObject = {package: {name: 'Delfos', version: 'v3.6.9'}};

@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 
-import {isEmail, isOptionalEmail} from './email';
+import {isEmail, isOptionalEmail} from '../src/email';
 
 describe('========= Email assertions ========= ', () => {
   describe('- Fuction: isEmail(value)', () => {

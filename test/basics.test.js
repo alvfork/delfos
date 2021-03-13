@@ -7,7 +7,7 @@ import {
   isFunction,
   isUndefined,
   isOptional,
-} from './basics';
+} from '../src/basics';
 
 describe('========= Basics assertions ========= ', () => {
   describe('- Fuction: isNull(value)', () => {

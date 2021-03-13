@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha --recursive \"src/*$MATCH*/*.test.js\" --require @babel/register",
+    "test": "mocha --recursive \"test/*$MATCH*/*.test.js\" --require @babel/register",
     "watch:test": "npm t -- -w",
     "cover": "nyc --reporter=lcov npm test",
     "summary:cover": "nyc npm test",
