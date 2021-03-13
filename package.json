@@ -3,18 +3,19 @@
   "version": "0.0.0-development",
   "description": "Tiny set of assertions, useful for common validations",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha --recursive \"test/*$MATCH*/*.test.js\" --require @babel/register",
+    "test": "mocha",
     "watch:test": "npm t -- -w",
     "cover": "nyc --reporter=lcov npm test",
     "summary:cover": "nyc npm test",
     "semantic-release": "semantic-release",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf dist && tsc",
     "build": "npm-run-all --parallel build:*",
-    "build:main": "babel --ignore '**/*.test.js' --copy-files --no-copy-ignored --no-comments --out-dir dist src --presets minify"
+    "build:main": "babel --copy-files --no-comments --out-dir dist dist --presets minify --extensions '.js'"
   },
   "repository": {
     "type": "git",
@@ -39,7 +40,12 @@
     "@babel/cli": "7.12.10",
     "@babel/core": "7.12.10",
     "@babel/preset-env": "7.12.11",
+    "@babel/preset-typescript": "7.13.0",
     "@babel/register": "7.12.10",
+    "@types/chai": "4.2.15",
+    "@types/mocha": "8.2.1",
+    "@typescript-eslint/eslint-plugin": "4.17.0",
+    "@typescript-eslint/parser": "4.17.0",
     "babel-loader": "8.2.2",
     "babel-preset-minify": "0.5.1",
     "chai": "4.2.0",
@@ -67,6 +73,8 @@
     "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "semantic-release": "^17.3.7",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.3",
     "webpack": "5.17.0",
     "webpack-cli": "4.4.0"
   },
@@ -76,8 +84,8 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": [
-      "npx eslint --ext .js",
+    "src/**/*.ts": [
+      "npx eslint --ext .ts",
       "npm run cover && npm run check-coverage"
     ]
   },
@@ -85,11 +93,6 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
   },
   "release": {
     "branches": [

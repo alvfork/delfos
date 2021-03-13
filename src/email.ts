@@ -15,7 +15,7 @@ const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))
  * isEmail('apolo@delfos.com');  // true
  */
 
-export const isEmail = (value) =>
+export const isEmail = (value: any): boolean =>
   !isFilledString(value) || value.length > MAX_EMAIL_LENGTH
     ? false
     : EMAIL_REGEX.test(value);
@@ -34,7 +34,7 @@ export const isEmail = (value) =>
  * isOptionalEmail('laeonidas@delfos.com');   // true
  */
 
-export const isOptionalEmail = (value) => {
+export const isOptionalEmail = (value: any): boolean => {
   if (isOptional(value) || isEmptyString(value)) return true;
 
   if (isString(value) && value.length < MAX_EMAIL_LENGTH)
