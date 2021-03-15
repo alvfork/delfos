@@ -53,9 +53,9 @@ Assert string type and empty value, or null value.
 
 ```javascript
 isNullOrEmptyString('');         // true
-isNullOrEmptyString(undefined);  // true
+isNullOrEmptyString(null);       // true
 isNullOrEmptyString(' ');        // false
-isNullOrEmptyString(null);       // false
+isNullOrEmptyString(undefined);  // false
 ```
 
 Returns **[boolean][16]** 

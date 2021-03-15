@@ -24,9 +24,9 @@ export const isEmptyString = (value) =>
  * @returns {boolean}
  * @example
  * isNullOrEmptyString('');         // true
- * isNullOrEmptyString(undefined);  // true
+ * isNullOrEmptyString(null);       // true
  * isNullOrEmptyString(' ');        // false
- * isNullOrEmptyString(null);       // false
+ * isNullOrEmptyString(undefined);  // false
  */
 
 export const isNullOrEmptyString = (value) =>
