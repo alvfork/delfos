@@ -6,7 +6,7 @@ import {
   isBlankString,
   isFilledString,
   isStringLengthValid,
-} from './string';
+} from '../src/string';
 
 describe('========= String assertions ========= ', () => {
   describe('- Fuction: isEmptyString(value)', () => {

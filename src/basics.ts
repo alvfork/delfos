@@ -8,7 +8,7 @@
  * isString('delfos');  // true
  */
 
-export const isNull = (value) => value === null;
+export const isNull = (value: any): boolean => value === null;
 
 /**
  * Assert string type.
@@ -20,7 +20,7 @@ export const isNull = (value) => value === null;
  * isString('delfos');  // true
  */
 
-export const isString = (value) => typeof value === 'string';
+export const isString = (value: any): boolean => typeof value === 'string';
 
 /**
  * Assert number type.
@@ -32,7 +32,7 @@ export const isString = (value) => typeof value === 'string';
  * isNumber(369);  // true
  */
 
-export const isNumber = (value) => typeof value === 'number';
+export const isNumber = (value: any): boolean => typeof value === 'number';
 
 /**
  * Assert object type.
@@ -44,7 +44,7 @@ export const isNumber = (value) => typeof value === 'number';
  * isObject({name: 'Delfos', version: 'v3.6.9'});  // true
  */
 
-export const isObject = (value) => typeof value === 'object';
+export const isObject = (value: any): boolean => typeof value === 'object';
 
 /**
  * Assert function type.
@@ -56,7 +56,7 @@ export const isObject = (value) => typeof value === 'object';
  * isFunction(() => {});  // true
  */
 
-export const isFunction = (value) => typeof value === 'function';
+export const isFunction = (value: any): boolean => typeof value === 'function';
 
 /**
  * Assert undefined type.
@@ -68,7 +68,8 @@ export const isFunction = (value) => typeof value === 'function';
  * isUndefined(undefined);  // true
  */
 
-export const isUndefined = (value) => typeof value === 'undefined';
+export const isUndefined = (value: any): boolean =>
+  typeof value === 'undefined';
 
 /**
  * Assert undefined type or value null.
@@ -81,4 +82,5 @@ export const isUndefined = (value) => typeof value === 'undefined';
  * isOptional(undefined);  // true
  */
 
-export const isOptional = (value) => isUndefined(value) || isNull(value);
+export const isOptional = (value: any): boolean =>
+  isUndefined(value) || isNull(value);

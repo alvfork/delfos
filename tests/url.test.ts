@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 
-import {isUrl, isOptionalUrl} from './url';
+import {isUrl, isOptionalUrl} from '../src/url';
 
 describe('========= Url assertions ========= ', () => {
   describe('- Fuction: isUrl(value)', () => {

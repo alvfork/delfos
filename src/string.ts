@@ -1,4 +1,4 @@
-import {isNull, isString} from '../basics/basics';
+import {isNull, isString} from './basics';
 
 /**
  * Assert string type and empty value.
@@ -13,7 +13,7 @@ import {isNull, isString} from '../basics/basics';
  * isEmptyString(undefined);  // false
  */
 
-export const isEmptyString = (value) =>
+export const isEmptyString = (value: any): boolean =>
   isString(value) ? value.length === 0 : false;
 
 /**
@@ -29,7 +29,7 @@ export const isEmptyString = (value) =>
  * isNullOrEmptyString(undefined);  // false
  */
 
-export const isNullOrEmptyString = (value) =>
+export const isNullOrEmptyString = (value: any): boolean =>
   isString(value) ? value.length === 0 : isNull(value);
 
 /**
@@ -45,7 +45,7 @@ export const isNullOrEmptyString = (value) =>
  * isBlankString(null);       // false
  */
 
-export const isBlankString = (value) =>
+export const isBlankString = (value: any): boolean =>
   isString(value) ? value.trim() === '' : false;
 
 /**
@@ -63,7 +63,7 @@ export const isBlankString = (value) =>
  * isFilledString(undefined);   // false
  */
 
-export const isFilledString = (value) =>
+export const isFilledString = (value: any): boolean =>
   isString(value) ? value.trim() !== '' : false;
 
 /**
@@ -81,5 +81,9 @@ export const isFilledString = (value) =>
  * isStringLengthValid('Delfos', 14, 8);  // false
  */
 
-export const isStringLengthValid = (value, top, floor = 0) =>
+export const isStringLengthValid = (
+  value: any,
+  top: number,
+  floor = 0
+): boolean =>
   isString(value) ? !(value.length > top || value.length < floor) : false;

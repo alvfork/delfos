@@ -1,5 +1,5 @@
-import {isFilledString, isEmptyString} from '../../string/string';
-import {isString, isOptional} from '../../basics/basics';
+import {isFilledString, isEmptyString} from './string';
+import {isString, isOptional} from './basics';
 
 const MAX_URL_LENGTH = 2048;
 const URL_REGEX = /[(http(s)?)://(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/;
@@ -15,7 +15,7 @@ const URL_REGEX = /[(http(s)?)://(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b
  * isUrl('https://www.npmjs.com/package/delfos');  // true
  */
 
-export const isUrl = (value) => {
+export const isUrl = (value: any): boolean => {
   if (!isFilledString(value) || value.length > MAX_URL_LENGTH) return false;
   return URL_REGEX.test(value);
 };
@@ -34,7 +34,7 @@ export const isUrl = (value) => {
  * isOptionalUrl('https://www.ancient.eu/Athens/');   // true
  */
 
-export const isOptionalUrl = (value) => {
+export const isOptionalUrl = (value: any): boolean => {
   if (isOptional(value) || isEmptyString(value)) return true;
   if (isString(value) && value.length < MAX_URL_LENGTH)
     return URL_REGEX.test(value);

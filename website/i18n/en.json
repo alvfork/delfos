@@ -5,29 +5,29 @@
     "previous": "Previous",
     "tagline": "Useful pocket assertions.",
     "docs": {
-      "assertions/basics/doc": {
+      "basics": {
         "title": "basics",
         "sidebar_label": "basics"
-      },
-      "assertions/internet/email/doc": {
-        "title": "email",
-        "sidebar_label": "email"
-      },
-      "assertions/internet/url/doc": {
-        "title": "url",
-        "sidebar_label": "url"
-      },
-      "assertions/object/doc": {
-        "title": "object",
-        "sidebar_label": "object"
-      },
-      "assertions/string/doc": {
-        "title": "string",
-        "sidebar_label": "string"
       },
       "doc": {
         "title": "Docs",
         "sidebar_label": "Docs"
+      },
+      "email": {
+        "title": "email",
+        "sidebar_label": "email"
+      },
+      "object": {
+        "title": "object",
+        "sidebar_label": "object"
+      },
+      "string": {
+        "title": "string",
+        "sidebar_label": "string"
+      },
+      "url": {
+        "title": "url",
+        "sidebar_label": "url"
       }
     },
     "links": {
