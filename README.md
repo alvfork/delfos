@@ -8,6 +8,18 @@
 <p align="center">Useful pocket assertions 🚀</p>
 
 <p align="center">
+  <a href="https://travis-ci.com/alvfork/delfos">
+    <img src="https://img.shields.io/travis/com/alvfork/delfos" alt="travis build"/>
+  </a>
+  <a href="https://codecov.io/github/alvfork/delfos">
+    <img src="https://img.shields.io/codecov/c/github/alvfork/delfos" alt="codecov coverage"/>
+  </a>
+  <a href="https://github.com/alvfork/delfos/issues?q=is%3Aopen+is%3Aissue+label%3Abug">
+    <img src="https://img.shields.io/github/issues/alvfork/delfos/bug" alt="bug issues">
+  </a>
+  <a href="https://github.com/alvfork/delfos/issues?q=is%3Aopen+is%3Aissue+label%3Afeature">
+    <img src="https://img.shields.io/github/issues/alvfork/delfos/feature" alt="feature issues">
+  </a>
   <a href="https://bundlephobia.com/result?p=delfos">
     <img src="https://img.shields.io/bundlephobia/min/delfos" alt="npm bundle size">
   </a>
@@ -17,15 +29,6 @@
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/npm/l/delfos" alt="MIT License"/>
   </a>
-
-  <a href="https://travis-ci.com/alvfork/delfos">
-    <img src="https://img.shields.io/travis/com/alvfork/delfos" alt="travis build"/>
-  </a>
-
-  <a href="https://codecov.io/github/alvfork/delfos">
-    <img src="https://img.shields.io/codecov/c/github/alvfork/delfos" alt="codecov coverage"/>
-  </a>
-
   <a href="https://www.npmjs.com/package/delfos">
     <img src="https://img.shields.io/npm/v/delfos" alt="codecov coverage"/>
   </a>
